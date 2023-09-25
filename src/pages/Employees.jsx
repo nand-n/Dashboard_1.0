@@ -20,8 +20,11 @@ const Employees = () => {
   // const gridRef = useRef();
   let grid;
   const toolbarClick = (arg) => {
-    console.log("arg", arg);
-    grid.pdfExport();
+    if (arg.item.id.includes("pdfexport")) {
+      grid.pdfExport();
+    } else if (arg.item.id.includes("exelexport")) {
+      grid.excelExport();
+    }
   };
 
   return (

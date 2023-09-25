@@ -11,7 +11,7 @@ const initialState = {
 };
 
 export const ContextProvier = ({ children }) => {
-  const [activeMenue, setActiveMenue] = useState(true);
+  const [activeMenue, setActiveMenue] = useState(false);
   const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
   const [currentColor, setCurrentColor] = useState("#03c9D7");
